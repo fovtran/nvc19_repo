@@ -13,6 +13,8 @@
 * Transmission: Human-to-human transmission of the virus has been confirmed. Viral RNA has also been found in stool samples from infected patients.
 
 
+![Detail S-Protein](./s-protein.jpg)
+
 ## Symptoms
 
 * Very Dry coughs.
@@ -53,14 +55,14 @@
 
 * Spike protein (SProt) (150 kilodaltons)
   * Binds to ACE2 in human lungs, other.
-  * Proteolysis promotes virus-cell fusion
+  * Proteolysis promotes virus-cell fusion.
 
 * Hemagglutinin Esterase Protein (HE) (65 Kilodaltons)
 
 * Membrane/Matrix Glycoprotein (Mprot) (25 Kilodaltons)
   * Most Abundant. Structural Protein.
   * Triple-spanning trans-membrane protein.
-  * Short aminacid ecto-domain
+  * Short amineacid ecto-domain
   * Role in capsid self-assembly.
   * Determinant of virion morphogenesis.
 
@@ -83,7 +85,7 @@
 * 3-Chymotrypsin-like protease
 * Papain-line protease
 * Helicase
-* Mpro in compounds 11a and 11b,
+* Mpro in compounds 11a and 11b
   * Mpro-11a (PDB: 6LZE)
-  * Mpro-11b (PDB: 6M0K) at 1.5-A resolution.
+  * Mpro-11b (PDB: 6M0K)
 * And RNA-dependent rna polymerase.
