@@ -69,13 +69,13 @@
 ## Intermediate surface proteins
 
 
-1. Nucleo-capsid Protein (Nprot) (60 kilodaltons)
-  - RNA binding protein.
-  - Many of its functions are unknown.
-  - Remains conserved from SARS-1
-  - Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
-  - Specific binding to MIF proteins
-  - MIF hampers erythropoiesis  
+* Nucleo-capsid Protein (Nprot) (60 kilodaltons)
+  * RNA binding protein.
+  * Many of its functions are unknown.
+  * Remains conserved from SARS-1
+  * Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
+  * Specific binding to MIF proteins
+  * MIF hampers erythropoiesis  
 
 
 ## Non-structural proteins (Potential for drug targets)
