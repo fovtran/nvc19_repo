@@ -70,20 +70,20 @@
 
 
 1. Nucleo-capsid Protein (Nprot) (60 kilodaltons)
- - RNA binding protein.
- - Many of its functions are unknown.
- - Remains conserved from SARS-1
- - Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
- - Specific binding to MIF proteins
- - MIF hampers erythropoiesis  
+  - RNA binding protein.
+  - Many of its functions are unknown.
+  - Remains conserved from SARS-1
+  - Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
+  - Specific binding to MIF proteins
+  - MIF hampers erythropoiesis  
 
 
 ## Non-structural proteins (Potential for drug targets)
 
 1. 3-Chymotrypsin-like protease
 2. Papain-line protease
-2. Helicase
-* Mpro in compounds 11a and 11b,
+3. Helicase
+4. Mpro in compounds 11a and 11b,
  - Mpro-11a (PDB: 6LZE)
  - Mpro-11b (PDB: 6M0K) at 1.5-A resolution.
-* and RNA-dependent rna polymerase.
+5. and RNA-dependent rna polymerase.
