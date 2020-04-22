@@ -51,40 +51,39 @@
 ## Associated proteins on its surface
 
 
-* Spike protein (SProt) (150 kilodaltons)
- * Binds to ACE2 in human lungs, other.
- * Proteolysis promotes virus-cell fusion
+1. Spike protein (SProt) (150 kilodaltons)
+ - Binds to ACE2 in human lungs, other.
+ - Proteolysis promotes virus-cell fusion
 
-* Hemagglutinin Esterase Protein (HE) (65 Kilodaltons)
+2. Hemagglutinin Esterase Protein (HE) (65 Kilodaltons)
 
-* Membrane/Matrix Glycoprotein (Mprot) (25 Kilodaltons)
-** Most Abundant. Structural Protein.
-** Triple-spanning trans-membrane protein.
-** Short aminacid ecto-domain
-** Role in capsid self-assembly.
-** Determinant of virion morphogenesis.
+3. Membrane/Matrix Glycoprotein (Mprot) (25 Kilodaltons)
+ - Most Abundant. Structural Protein.
+ - Triple-spanning trans-membrane protein.
+ - Short aminacid ecto-domain
+ - Role in capsid self-assembly.
+ - Determinant of virion morphogenesis.
 
-
-* Small Envelope Protein (Eprot) (9-12 Kilodaltons)
+4. Small Envelope Protein (Eprot) (9-12 Kilodaltons)
 
 ## Intermediate surface proteins
 
 
-* Nucleo-capsid Protein (Nprot) (60 kilodaltons)
- * RNA binding protein.
- * Many of its functions are unknown.
- * Remains conserved from SARS-1
- * Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
- * Specific binding to MIF proteins
- * MIF hampers erythropoiesis  
+1. Nucleo-capsid Protein (Nprot) (60 kilodaltons)
+ - RNA binding protein.
+ - Many of its functions are unknown.
+ - Remains conserved from SARS-1
+ - Monocyte Migration Inhibitor Factor(MIF) decreased from SARS-1
+ - Specific binding to MIF proteins
+ - MIF hampers erythropoiesis  
 
 
 ## Non-structural proteins (Potential for drug targets)
 
-* 3-Chymotrypsin-like protease
-* Papain-line protease
-* Helicase
+1. 3-Chymotrypsin-like protease
+2. Papain-line protease
+2. Helicase
 * Mpro in compounds 11a and 11b,
- * Mpro-11a (PDB: 6LZE)
- * Mpro-11b (PDB: 6M0K) at 1.5-A resolution.
+ - Mpro-11a (PDB: 6LZE)
+ - Mpro-11b (PDB: 6M0K) at 1.5-A resolution.
 * and RNA-dependent rna polymerase.
