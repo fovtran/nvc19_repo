@@ -1,0 +1,72 @@
+wwPDB 2020 News
+Contents
+02/25/2020	Improving carbohydrates in the PDB for 2020
+02/18/2020	Improve Your Previously-Released Coordinates AND Keep Your Original PDB ID: Phase II
+02/04/2020	New Coronavirus Protease Structure Available
+01/14/2020	Distribution of NMR data in a unified format at the PDB archive
+01/10/2020	EMDB policy and procedures document now available
+01/08/2020	Time-stamped Copies of PDB and EMDB Archives
+02/25/2020
+
+Improving carbohydrates in the PDB for 2020
+In July 2020, the wwPDB will roll out updated PDB structures and reference data files with standardized representation of carbohydrate molecules, improving the Findability and Interoperability of PDB data. Detailed information about this work is available from the wwPDB website, including PDBx/mmCIF dictionary extensions and over 500 example files. We encourage developers of software packages that produce, access, or visualize PDB data to review this information and adapt their software.
+
+Through collaboration with the glycoscience community, software tools were developed to standardize atom nomenclature of nearly 800 monosaccharides in the Chemical Component Dictionary (CCD) and applied branched polymeric representation to oligo- and polysaccharides within the PDB archive, enabling easy translation to other representations commonly used by glycobiologists. To guarantee unambiguous chemical description of oligo-/polysaccharides in each of the nearly 12,000 affected PDB entries, we have included an explicit description of covalent linkage information between their monomeric units. To ensure continued Findability of common oligosaccharides (e.g., sucrose, Lewis X factor), we have expanded the Biologically Interesting molecule Reference Dictionary (BIRD) which will contain the covalent linkage information and common synonyms for such molecules.
+
+wwPDB is also taking this opportunity to improve the organization of chemical synonyms in the CCD by introducing a new _pdbx_chem_comp_synonyms data category. This will enable more comprehensive capture of alternative names for small molecules in the PDB. To minimize disruption to users, there will be an initial transition period, where the legacy data item, _chem_comp.pdbx_synonyms, will be retained.
+
+RCSB PDB News ImagePDB structure shown: 1b5f
+ Top
+02/18/2020
+
+Improve Your Previously-Released Coordinates AND Keep Your Original PDB ID: Phase II
+We are pleased to announce that from February 18, 2020 authors (PIs) of released PDB structures can update the model coordinates while retaining the same PDB accession code, thereby preserving the link with the original publication. In this second and final phase of the project we have extended the versioning functionality to structures deposited prior to the roll out of OneDep--the common wwPDB system for deposition, validation, and biocuration.
+
+For entries deposited via OneDep, depositors should log into the corresponding session at deposit.wwpdb.org and submit the request via the OneDep communication panel. For entries deposited via legacy systems, requests should be initiated by sending an email to deposit-help@mail.wwpdb.org and including the PDB code in the subject and body of the email. Once submitted, the revised model will be processed by wwPDB biocurators and the updated version released immediately upon depositor’s approval. Versioning of PDB entries will be limited to changes in the coordinate files, with no changes permitted to the deposited experimental data. To limit the impact on the wwPDB biocuration resources, PDB versioning is currently restricted to one replacement per PDB entry per year, and three entries per Principal Investigator per year. We will review this restriction in 2021.
+
+The most recent version of the entry will be made available in the PDB archive FTP (ftp.wwpdb.org). All major versions of a PDB structure will be retained in the versioned FTP archive (ftp-versioned.wwpdb.org)--more information can be found on the wwPDB website. The structure of the versioned FTP archive has been built allowing for future extension of the PDB code format. PDB entry 1abc would therefore be found in the folder pdb_00001abc.
+
+Changes made to entries during versioning are considered to be either major or minor. Updates to atomic coordinates, polymer sequence, or chemical description trigger a major version increment, while changes to any other categories are classified as minor. Changes introduced are recorded in the PDBx/mmCIF audit categories.
+
+If you have any further queries regarding the process of PDB versioning, please contact the wwPDB at deposit-help@mail.wwpdb.org.
+
+ Top
+02/04/2020
+
+New Coronavirus Protease Structure Available
+PDB data provide a starting point for structure-guided drug discovery
+
+A high-resolution crystal structure of COVID-19 (2019-nCoV) coronavirus 3CL hydrolase (Mpro) has been determined by Zihe Rao and Haitao Yang's research team at ShanghaiTech University. Rapid public release of this structure of the main protease of the virus (PDB 6lu7) will enable research on this newly-recognized human pathogen.
+
+Recent emergence of the COVID-19 coronavirus has resulted in a WHO-declared public health emergency of international concern. Research efforts around the world are working towards establishing a greater understanding of this particular virus and developing treatments and vaccines to prevent further spread.
+
+RCSB PDB News Imagehttps://doi.org/10.2210/pdb6lu7/pdb
+While PDB entry 6lu7 is currently the only public-domain 3D structure from this specific coronavirus, the PDB contains structures of the corresponding enzyme from other coronaviruses. The 2003 outbreak of the closely-related Severe Acute Respiratory Syndrome-related coronavirus (SARS) led to the first 3D structures, and today there are more than 200 PDB structures of SARS proteins. Structural information from these related proteins could be vital in furthering our understanding of coronaviruses and in discovery and development of new treatments and vaccines to contain the current outbreak.
+
+The coronavirus 3CL hydrolase (Mpro) enzyme, also known as the main protease, is essential for proteolytic maturation of the virus. It is thought to be a promising target for discovery of small-molecule drugs that would inhibit cleavage of the viral polyprotein and prevent spread of the infection.
+
+Comparison of the protein sequence of the COVID-19 coronavirus 3CL hydrolase (Mpro) against the PDB archive identified 95 PDB proteins with at least 90% sequence identity. Furthermore, these related protein structures contain approximately 30 distinct small molecule inhibitors, which could guide discovery of new drugs. Of particular significance for drug discovery is the very high amino acid sequence identity (96%) between the COVID-19 coronavirus 3CL hydrolase (Mpro) and the SARS virus main protease (PDB 1q2w). Summary data about these closely-related PDB structures are available (CSV) to help researchers more easily find this information. In addition, the PDB houses 3D structure data for more than 20 unique SARS proteins represented in more than 200 PDB structures, including a second viral protease, the RNA polymerase, the viral spike protein, a viral RNA, and other proteins (CSV).
+
+Public release of the COVID-19 coronavirus 3CL hydrolase (Mpro), at a time when this information can prove most vital and valuable, highlights the importance of open and timely availability of scientific data. The wwPDB strives to ensure that 3D biological structure data remain freely accessible for all, while maintaining as comprehensive and accurate an archive as possible. We hope that this new structure, and those from related viruses, will help researchers and clinicians address the COVID-19 coronavirus global public health emergency.
+
+Update: Released COVID-19-related PDB structures include
+
+PDB structure 6lu7 (X. Liu, B. Zhang, Z. Jin, H. Yang, Z. Rao Crystal structure of COVID-19 main protease in complex with an inhibitor N3 doi: 10.2210/pdb6lu7/pdb) Released 2020-02-05
+PDB structure 6vsb (D. Wrapp, N. Wang, K.S. Corbett, J.A. Goldsmith, C.-L. Hsieh, O. Abiona, B.S. Graham, J.S. McLellan (2020) Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation Science doi: 10.1126/science.abb2507) Released 2020-02-26
+PDB structure 6lxt (Y. Zhu, F. Sun Structure of post fusion core of 2019-nCoV S2 subunit doi: 10.2210/pdb6lxt/pdb) Released 2020-02-26
+PDB structure 6lvn (Y. Zhu, F. Sun Structure of the 2019-nCoV HR2 Domain doi: 10.2210/pdb6lvn/pdb) Released 2020-02-26
+PDB structure 6vw1
+J. Shang, G. Ye, K. Shi, Y.S. Wan, H. Aihara, F. Li Structural basis for receptor recognition by the novel coronavirus from Wuhan doi: 10.2210/pdb6vw1/pdb
+Released 2020-03-04
+PDB structure 6vww
+Y. Kim, R. Jedrzejczak, N. Maltseva, M. Endres, A. Godzik, K. Michalska, A. Joachimiak, Center for Structural Genomics of Infectious Diseases Crystal Structure of NSP15 Endoribonuclease from SARS CoV-2 doi: 10.2210/pdb6vww/pdb
+Released 2020-03-04
+PDB structure 6y2e
+L. Zhang, X. Sun, R. Hilgenfeld Crystal structure of the free enzyme of the SARS-CoV-2 (2019-nCoV) main protease doi: 10.2210/pdb6y2e/pdb
+Released 2020-03-04
+PDB structure 6y2f
+L. Zhang, X. Sun, R. Hilgenfeld Crystal structure (monoclinic form) of the complex resulting from the reaction between SARS-CoV-2 (2019-nCoV) main protease and tert-butyl (1-((S)-1-(((S)-4-(benzylamino)-3,4-dioxo-1-((S)-2-oxopyrrolidin-3-yl)butan-2-yl)amino)-3-cyclopropyl-1-oxopropan-2-yl)-2-oxo-1,2-dihydropyridin-3-yl)carbamate (alpha-ketoamide 13b) doi: 10.2210/pdb6y2f/pdb
+Released 2020-03-04
+PDB structure 6y2g
+L. Zhang, X. Sun, R. Hilgenfeld Crystal structure (orthorhombic form) of the complex resulting from the reaction between SARS-CoV-2 (2019-nCoV) main protease and tert-butyl (1-((S)-1-(((S)-4-(benzylamino)-3,4-dioxo-1-((S)-2-oxopyrrolidin-3-yl)butan-2-yl)amino)-3-cyclopropyl-1-oxopropan-2-yl)-2-oxo-1,2-dihydropyridin-3-yl)carbamate (alpha-ketoamide 13b) doi: 10.2210/pdb6y2g/pdb
+Released 2020-03-04
