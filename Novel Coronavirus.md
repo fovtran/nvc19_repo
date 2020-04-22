@@ -58,11 +58,11 @@
 * Hemagglutinin Esterase Protein (HE) (65 Kilodaltons)
 
 * Membrane/Matrix Glycoprotein (Mprot) (25 Kilodaltons)
- * Most Abundant. Structural Protein.
- * Triple-spanning trans-membrane protein.
- * Short aminacid ecto-domain
- * Role in capsid self-assembly.
- * Determinant of virion morphogenesis.
+** Most Abundant. Structural Protein.
+** Triple-spanning trans-membrane protein.
+** Short aminacid ecto-domain
+** Role in capsid self-assembly.
+** Determinant of virion morphogenesis.
 
 
 * Small Envelope Protein (Eprot) (9-12 Kilodaltons)
