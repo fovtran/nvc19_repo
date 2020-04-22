@@ -35,8 +35,9 @@
 
 * The coronavirus 3CL hydrolase (Mpro) enzyme, also known as the main protease, is essential for proteolytic maturation of the virus and regulates the activity of the viral replication complex.
 * It is thought to be a promising target for discovery of small-molecule drugs that would inhibit cleavage of the viral polyprotein and prevent spread of the infection.
-* Comparison of the protein sequence of the COVID-19 coronavirus 3CL hydrolase (Mpro) against the PDB archive identified 95 PDB proteins with at least 90% sequence identity.
-* In order to elucidate the inhibition mechanism of SARS-CoV-2 Mpro in compounds 11a and 11b, the scientists determined the high-resolution crystal structure of complexes Mpro-11a (PDB: 6LZE) and Mpro-11b (PDB: 6M0K) at 1.5-A resolution.
+* Comparison of the protein sequence of the COVID-19 coronavirus 3CL hydrolase (Mpro). Identifies with 95 PDB proteins with at least 90% sequence identity.
+* Elucidating the inhibition mechanism of SARS-CoV-2 Mpro in compounds 11a and 11b
+  * Scientists determined the high-resolution crystal structure of complexes Mpro-11a (PDB: 6LZE) and Mpro-11b (PDB: 6M0K).
 
 
 ## Treatment strategies against COVID-19
