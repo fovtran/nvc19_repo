@@ -40,7 +40,7 @@ cif = open(argv[1])
 # A list to be propagated with data blocks
 data = []
 
-# Create a PdbxReader object 
+# Create a PdbxReader object
 pRd = PdbxReader(cif)
 
 # Read the CIF file, propagating the data list
@@ -70,7 +70,7 @@ for c in candidates :
 # If none of the optional descriptors are present, just use the entity id
 if not headerDescriptor: headerDescriptor = "id"
 
-# Retrieve the entity_poly_seq category table, 
+# Retrieve the entity_poly_seq category table,
 entity_poly_seq = block.getObj("entity_poly_seq")
 
 # Use the CIF file pathname to generate the FASTA file (.fasta) pathname
@@ -100,13 +100,13 @@ for index in range(entity_poly_seq.getRowCount()) :
 
     # Obtain the ID of the entity monomer described by this row
     tempEntity = (int)(entity_poly_seq.getValue("entity_id", index))
-    
+
     # If we are dealing with a new entity
     if currentEntity != tempEntity :
 
         # Write out the current entity's FASTA codification
         fasta.write(codifiedEntity)
-        
+
         # Store the current entity's FASTA codification
         codifiedEntities.append(codifiedEntity)
 
@@ -131,11 +131,11 @@ for index in range(entity_poly_seq.getRowCount()) :
 
     # If the monomer is an amino acid
     if len(monomer) == 3 :
-	
+
         # If it's in the codification dictionary, add it
         if codification.has_key(monomer) :
             codifiedEntity += codification[monomer]
-			
+
         # Otherwise, use the default value "X"
         else :
             codifiedEntity += "X"
@@ -163,11 +163,11 @@ if compare :
     # Compare every codification with the one in the CIF file
     for i in range(len(codifiedEntities)) :
         code = entity_poly.getValue("pdbx_seq_one_letter_code_can", i)
-        print "For entity #%d: " % (i + 1)
-        print "\nThe codified version in the CIF file is as follows: " 
-        print code
-        print "\nThe codified version obtained from translating entity_poly_seq is as follows: "
-        print codifiedEntities[i]
+        print ("For entity #%d: " % (i + 1))
+        print ("\nThe codified version in the CIF file is as follows: " )
+        print (code)
+        print ("\nThe codified version obtained from translating entity_poly_seq is as follows: ")
+        print (codifiedEntities[i])
         equality = (code == codifiedEntities[i]) and "equivalent" or "inequivalent"
-        print "\nThe two are %s." % (equality) 
-        print "---"
+        print ("\nThe two are %s." % (equality) )
+        print ("---")

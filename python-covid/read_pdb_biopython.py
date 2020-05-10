@@ -3,7 +3,7 @@ from Bio.PDB.PDBIO import PDBIO
 import nglview as nv
 
 parser = PDBParser()
-structure = parser.get_structure("1a8o", "structures_4_3_2020/m_protein.pdb")
+structure = parser.get_structure("6LU7", "PDB/m_protein.pdb")
 
 print(structure)
 view = nv.show_biopython(structure)

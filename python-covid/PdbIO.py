@@ -16,7 +16,6 @@ from Bio.Data.SCOPData import protein_letters_3to1
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-
 def AtomIterator(pdb_id, structure):
     """Return SeqRecords from Structure objects.
 
@@ -29,7 +28,6 @@ def AtomIterator(pdb_id, structure):
     of residues.
 
     Calling funtions must pass a Bio.PDB.Structure.Structure object.
-
 
     See Bio.SeqIO.PdbIO.PdbAtomIterator and Bio.SeqIO.PdbIO.CifAtomIterator for
     details.

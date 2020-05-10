@@ -5,10 +5,10 @@
 # license.  Please see the LICENSE file that should have been included
 # as part of this package.
 
-"""Download PDB Chemical Component Dictionary and generate dict.
-
-Download and parse PDB Chemical Component Dictionary,
-then write out dict for to_one_letter_code.
+"""
+	Download PDB Chemical Component Dictionary and generate dict.
+	Download and parse PDB Chemical Component Dictionary,
+		then write out dict for to_one_letter_code.
 """
 
 import gzip
