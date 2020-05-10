@@ -24,5 +24,3 @@ https://github.com/celiavelmar/open-covid19-test
 https://github.com/3778/COVID-19
 https://github.com/covid19br/covid19br.github.io
 https://github.com/3778/COVID-19
-
-http://ri.agro.uba.ar/files/download/articulo/
