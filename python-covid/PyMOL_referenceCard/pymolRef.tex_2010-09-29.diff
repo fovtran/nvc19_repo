@@ -1,0 +1,70 @@
+--- pymolRef.tex.orig	2010-09-29 12:00:54.538177744 +0200
++++ pymolRef.tex	2010-09-29 13:24:44.880533079 +0200
+@@ -14,6 +14,12 @@
+ % You should have received a copy of the GNU General Public License
+ % along with this program; if not, write to the Free Software
+ % Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
++%
++% CHANGELOG
++% 2010-09-29 Thomas Holder <sf.net/users/speleo3>
++%  * fix some commas
++%  * fix 'near' and 'within'
++%  * fix cartoon commands
+ 
+ \usepackage{multicol}
+ 
+@@ -102,8 +108,8 @@
+ \key{general}{all, none, hydro, hetatm, visible, present}
+ \key{atoms not in a selection}{select sidechains, ! bb}
+ \key{atoms with a vdW gap $<$ 3~\r{A}}{resi 6 around 3}
+-\key{atom centers with a gap $<$ 1.0~\r{A}}{resi 6 near 1}
+-\key{atoms centers within $<$ 1.0~\r{A}}{within 4 resi 6} 
++\key{atom centers with a gap $<$ 1.0~\r{A}}{all near 1 of resi 6}
++\key{atom centers within $<$ 4.0~\r{A}}{all within 4 of resi 6} 
+ }
+ 
+ \vskip 5pt
+@@ -111,11 +117,11 @@
+ \vbox{\head{Basic Commands}
+ Some commands used with atoms selections. If you are unsure about the selection, click on the molecule part that you want in the viewing window and then look at the output line to see the selection.\par
+ \vskip 5pt
+-\key{fill viewer with selection}{zoom, /pept//a}
++\key{fill viewer with selection}{zoom /pept//a}
+ \key{center a selection}{center /pept//a}
+ \key{colour a selection}{colour pink, /pept//a}
+ \key{force Pymol to reapply colours}{recolor}
+-\key{set background colour}{bg\_color, white}
++\key{set background colour}{bg\_color white}
+ \key{vdW representation of selection}{show spheres, 156/ca}
+ \key{stick representation of selection}{show sticks, a//}
+ \key{line representation of selection}{show lines, /pept}
+@@ -125,7 +131,7 @@
+ \key{surface representation of selection}{show surface, /pept}
+ \key{nonbonded representation of selection}{show nonbonded, /pept}
+ \key{nonbonded sphere representation of selection}{show nb\_spheres, /pept}
+-\key{cartoon representation of selection}{show cartoon automatic, a//}
++\key{cartoon representation of selection}{show cartoon, a//}
+ \key{clear all}{hide all}
+ \key{rotate a selection}{rotate \textit{axis}, \textit{angle}, \textit{selection}}
+ \key{translate a selection}{translate [x,y,z], \textit{selection}}
+@@ -147,12 +153,14 @@
+ \key{secondary colour}{set cartoon\_highlight\_color,grey}
+ \key{limit colour to ss}{set cartoon\_discrete\_colors,on}
+ \key{cartoon transparency}{set cartoon\_transparency,0.5}
+-\key{cartoon loop}{show cartoon loop, a//}
+-\key{cartoon rectangular}{show cartoon rect, a//}
+-\key{cartoon oval}{show cartoon oval, a//}
+-\key{cartoon tubular}{show cartoon tube, a//}
+-\key{cartoon arrow}{show cartoon arrow, a//}
+-\key{cartoon dumbell}{show cartoon dumbell, a//}
++\key{cartoon loop}{cartoon loop, a//}
++\key{cartoon loop}{cartoon loop, a//}
++\key{cartoon rectangular}{cartoon rect, a//}
++\key{cartoon oval}{cartoon oval, a//}
++\key{cartoon tubular}{cartoon tube, a//}
++\key{cartoon arrow}{cartoon arrow, a//}
++\key{cartoon dumbell}{cartoon dumbell, a//}
++\key{b-factor sausage}{cartoon putty, a//}
+ }
+ 
+ \vskip 5pt

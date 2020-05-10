@@ -1,0 +1,315 @@
+\documentclass[landscape]{article}
+% $Id: vi-ref.tex,v 1.9 2004/09/28 18:19:11 dbindner Exp $
+% Copyright 2002-2005 Donald Bindner
+% This program is free software; you can redistribute it and/or
+% modify it under the terms of the GNU General Public License
+% as published by the Free Software Foundation; either version 2
+% of the License, or (at your option) any later version.
+% 
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+% 
+% You should have received a copy of the GNU General Public License
+% along with this program; if not, write to the Free Software
+% Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+%
+% CHANGELOG
+% 2010-09-29 Thomas Holder <sf.net/users/speleo3>
+%  * fix some commas
+%  * fix 'near' and 'within'
+%  * fix cartoon commands
+
+\usepackage{multicol}
+
+\setlength{\textheight}{7.5 in}
+\setlength{\textwidth}{10 in}
+\setlength{\hoffset}{-2 in}
+\setlength{\voffset}{-1 in}
+\setlength{\footskip}{12 pt}
+\setlength{\oddsidemargin}{1.5 in}
+\setlength{\evensidemargin}{1.5 in}
+\setlength{\topmargin}{.5 in}
+\setlength{\headheight}{12 pt}
+\setlength{\headsep}{0 in}
+
+\setlength{\parindent}{0 in}
+
+\ifx \pdfpagewidth \undefined
+\else
+ \pdfpagewidth=11in    % page width of PDF output
+ \pdfpageheight=8.5in  % page height of PDF output
+\fi
+
+\begin{document}
+\thispagestyle{empty}
+\fontsize{9}{10}\selectfont
+
+\newcommand{\key}[2]{#1 \hfill \texttt{#2}\par}
+\newcommand{\head}[1]{{\large\textbf{#1}}\\}
+
+\begin{multicols}{3}
+{\Large Pymol Reference Card}
+
+\vskip 10pt
+
+\vbox{\head{Modes}
+Pymol supports two modes of input: point and click mode, and command line mode.  The point and click allows you to quickly rotate the molecule(s) zoom in and out and change the clipping planes. The command line mode where commands are entered into the external GUI window supports all of the commands in the point and click mode, but is more flexible and possibly useful for complex selection and command issuing. Commands entered on the command line are executed when you press the return key.\par
+\key{command help}{help \textit{keyword}}
+}
+
+\vskip 5pt
+\vbox{\head{Loading Files}
+\key{file loading}{load data/test/pept.pdb}
+\key{loading from terminal}{pymol data/test/pept.pdb}
+\key{toggle between text and graphics}{\textit{Esc}}
+\key{toggle Y axis rocking}{rock}
+\key{stereo view}{stereo on/off}
+\key{stereo type}{stereo crosseye / walleye / quadbuffer}
+\key{undo action}{undo}
+\key{reset view}{reset}
+\key{reinitialize Pymol}{reinitialize}
+\key{quit (force, even if unsaved)}{quit}
+}
+
+\vskip 5pt
+
+\vbox{\head{Mouse Control}
+\vskip 5pt 
+\begin{tabular}{l|cccc}
+       & L    & M    & R    & Wheel\\
+       & Rota & Move & MovZ & Slab \\
+\hline
+Shift  & +Box & -Box & Clip & MovS \\
+Ctrl   & +/-  & PkAt & Pk1  & ---  \\
+CtSh   & Sele & Cent & Menu & ---  \\
+DblClk & Menu & Cent & PkAt & ---  \\
+\end{tabular}\par
+\key{set the center of rotation}{origin \textit{selection}}
+}
+
+\vskip 5pt
+
+\vbox{\head{Atom Selection}
+\textit{object-name/segi-id/chain-id/resi-id/name-id}
+\vskip 5pt
+\key{molecular system selection}{/pept}
+\key{molecule selection}{/pept/lig}
+\key{chain selection}{/pept/lig/a}
+\key{residue selection}{/pept/lig/a/10}
+\key{atom}{/pept/lig/a/10/ca}
+\key{ranges}{lig/a/10-12/ca}
+\key{ranges}{a/6+8/c+o}
+\key{missing selections}{/pept//a}
+\key{naming a selection}{select bb, name c+o+n+ca}
+\key{count atoms in a selection}{count\_atoms bb}
+\key{remove atoms from a selection}{remove resi 5}
+\key{general}{all, none, hydro, hetatm, visible, present}
+\key{atoms not in a selection}{select sidechains, ! bb}
+\key{atoms with a vdW gap $<$ 3~\r{A}}{resi 6 around 3}
+\key{atom centers with a gap $<$ 1.0~\r{A}}{all near 1 of resi 6}
+\key{atom centers within $<$ 4.0~\r{A}}{all within 4 of resi 6} 
+}
+
+\vskip 5pt
+
+\vbox{\head{Basic Commands}
+Some commands used with atoms selections. If you are unsure about the selection, click on the molecule part that you want in the viewing window and then look at the output line to see the selection.\par
+\vskip 5pt
+\key{fill viewer with selection}{zoom /pept//a}
+\key{center a selection}{center /pept//a}
+\key{colour a selection}{colour pink, /pept//a}
+\key{force Pymol to reapply colours}{recolor}
+\key{set background colour}{bg\_color white}
+\key{vdW representation of selection}{show spheres, 156/ca}
+\key{stick representation of selection}{show sticks, a//}
+\key{line representation of selection}{show lines, /pept}
+\key{ribbon representation of selection}{show ribbon, /pept}
+\key{dot representation of selection}{show dots, /pept}
+\key{mesh representation of selection}{show mesh, /pept}
+\key{surface representation of selection}{show surface, /pept}
+\key{nonbonded representation of selection}{show nonbonded, /pept}
+\key{nonbonded sphere representation of selection}{show nb\_spheres, /pept}
+\key{cartoon representation of selection}{show cartoon, a//}
+\key{clear all}{hide all}
+\key{rotate a selection}{rotate \textit{axis}, \textit{angle}, \textit{selection}}
+\key{translate a selection}{translate [x,y,z], \textit{selection}}
+}
+
+\vskip 5pt
+
+\vbox{\head{Cartoon Settings}
+Setting the value at the end to 0 forces the secondary structure to go though the CA position.\par
+\key{cylindrical helices}{set cartoon\_cylindrical\_helices,1}
+\key{fancy helices [tubular edge]}{set cartoon\_fancy\_helices,1}
+\key{flat sheets}{set cartoon\_flat\_sheets,1}
+\key{smooth loops}{set cartoon\_smooth\_loops,1}
+\key{find rings for cartoon}{set cartoon\_ring\_finder,[1,2,3,4]}
+\key{ring mode}{set cartoon\_ring\_mode,[1,2,3]}
+\key{nucleic acid mode}{set nucleic\_acid\_mode,[0,1,2,3,4]}
+\key{cartoon sidechains}{set cartoon\_side\_chain\_helper; rebuild} 
+\key{primary colour}{set cartoon\_color,blue}
+\key{secondary colour}{set cartoon\_highlight\_color,grey}
+\key{limit colour to ss}{set cartoon\_discrete\_colors,on}
+\key{cartoon transparency}{set cartoon\_transparency,0.5}
+\key{cartoon loop}{cartoon loop, a//}
+\key{cartoon loop}{cartoon loop, a//}
+\key{cartoon rectangular}{cartoon rect, a//}
+\key{cartoon oval}{cartoon oval, a//}
+\key{cartoon tubular}{cartoon tube, a//}
+\key{cartoon arrow}{cartoon arrow, a//}
+\key{cartoon dumbell}{cartoon dumbell, a//}
+\key{b-factor sausage}{cartoon putty, a//}
+}
+
+\vskip 5pt
+
+\vbox{\head{Image Output}
+\key{low resolution}{ray}
+\key{high resolution}{ray 2000,2000}
+\key{ultra-high resolution}{ray 5000,5000}
+\key{change the default size [pts]}{viewport 640,480} 
+\key{image shadow control}{set ray\_shadow,0}
+\key{image fog control}{set ray\_trace\_fog,0}
+\key{image depth cue control}{set depth\_cue,0}
+\key{image antialiasing control}{set antialias,1}
+\key{export image as .png}{png \textit{image}.png}
+}
+
+\vskip 5pt
+
+\vbox{\head{Hydrogen Bonding}
+Draw bonds between atoms and label the residues that are involved.\par 
+\vskip 5pt
+\key{draw a line between atoms}{distance 542/oe1,538/ne}
+\key{set the line dash gap}{set dash\_gap,0.09}
+\key{set the line dash width}{set dash\_width,3.0}
+\key{set the line dash radius}{set dash\_radius,0.0}
+\key{set the line dash length}{set dash\_length,0.15}
+\key{set round dash ends}{set dash\_round\_ends,on}
+\key{hide a label}{hide labels, dist01}
+\key{label a reside}{label (542/oe1), "\%s" \%("E542")}
+\key{set label font}{set label\_font\_id,4}
+\key{set label colour}{set label\_color,white}
+}
+
+\vskip 5pt
+
+\vbox{\head{Electrostatics}
+There are a number of ways to apply electrostatics in Pymol. The user can use GRASP to generate a map and then import it. Alternatively the user can use the APBS Pymol plugin. Pymol also has a built in function that is quick and dirty.\par
+\key{generate electrostatic surface}{action > generate>vacuum electrostatics > protein contact potential}
+}
+
+\vskip 5pt
+
+\vbox{\head{Pymol Movies (mac)}
+\key{move the camera}{move x,10}
+\key{turn the camera}{turn x,90}
+\key{play the movie}{mplay}
+\key{stop the movie}{mstop}
+\key{writeout png files}{mpng \textit{prefix} [, first [, last]]}
+\key{show a particular frame}{frame \textit{number}}
+\key{move forward on frame}{forward}
+\key{move back one frame}{backwards}
+\key{go to the start of the movie}{rewind}
+\key{go to the middle of the movie}{middle}
+\key{go to the movie end}{ending}
+\key{determine the current frame}{get\_frame}
+\key{clear the movie cache}{mclear}
+\key{execute a command in a frame}{mdo 1, turn x,5; turn y,5;}
+\key{dump current movie commands}{mdump}
+\key{reset the number of frames per second}{meter\_reset}
+}
+
+\vskip 10pt
+\vbox{\head{Miscellaneous}
+\key{add hydrogens in to a molecule selection}{h\_add}
+alias a set of commands separated by ";"
+\key{}{alias go,load 1hpv.pdb; zoom 200/; show sticks, 200/ around 8}
+\key{structurally align}{align  prot1////CA, prot2, object=alignment}
+\key{fit one molelcule to another}{fit \textit{selection}, \textit{target}}
+\key{copy at selection}{copy \textit{target}, \textit{source}}
+\key{create a new selection}{create \textit{target}, \textit{selection}}
+\key{delete a selection}{delete \textit{selection}}
+\key{save file}{save \textit{filename}, \textit{selection}}
+\key{protect or deprotect a selection}{[de]protect \textit{selection}}
+\key{mask or demask to allow/stop selection}{[un]mask \textit{selection}}
+\key{align coordinates with axis}{orient \textit{selection}}
+\key{get the current rotation matrix}{get\_view}
+\key{input a rotation matrix}{set\_view}
+\key{safely refresh the scene}{refresh}
+\key{store a scene}{view \textit{name}, store, \textit{description}}
+\key{restore a view}{view \textit{name}, [recall]}
+\key{set a new colour}{set\_color \textit{name}, \textit{rgb}}
+}
+
+\vskip 10pt
+
+\vbox{\head{Secondary Structures}
+Pymol has a secondary structure determination algorithm called dss, however it is better to use the DSSP algorithm and then define the limits manually.\par
+\vskip 5pt
+\key{to run dss}{dss \textit{selection}}
+\key{to define helical structure}{alter 11-40/, ss='H'}
+\key{to define loop regions}{alter 40-50/, ss='L'}
+\key{to define strand structure}{alter 50-60/, ss='S'}
+\key{rebuild the cartoon after alteration}{rebuild}
+\key{get dihedral angle}{get\_dihedral 4/n,4/c,4/ca,4/cb}
+}
+
+\vskip 10pt
+
+\vbox{\head{Files}
+\key{change the working directory}{cd $<$path$>$}
+\key{list contents of current directory}{ls}
+\key{print current working directory}{pwd}
+}
+
+\vskip 10pt
+
+\vbox{\head{Crystal Structures}
+To recreate crystal packing of molelcules within 5~\r{A} of pept in the pept.pdb (which must contain CRYST date), use the symexp command. 
+\key{}{symexp sym,pept,(pept),5.0}
+}
+
+\vskip 10pt
+
+\vbox{\head{NMR Structures}
+NMR models should be loaded into the same object, but should have different states.
+\key{load a model into an object}{load \textit{file.pdb}, \textit{object}}
+\key{show all models in an object}{set all\_states,1}
+\key{show only one object model}{set all\_states,0}
+\key{show a particular model}{frame \textit{model\_number}}
+\key{determine which model}{get\_model}
+\key{fit two structures to one another}{fit \textit{selection}}
+\key{fit and calculate the rms}{rms \textit{selection}}
+\key{rms without fitting}{rms\_cur \textit{selection}}
+\key{fit ensemble structures}{intra\_fit \textit{selection},1}
+\key{calculate rms}{intra\_rms \textit{selection},\textit{state}}
+\key{ensemble rms without fitting}{intra\_rms\_cur \textit{selection},\textit{state}}
+}
+
+\vskip 10pt
+
+\vbox{\head{Changing Structures}
+\key{add a bond}{bond atom1, atom2}
+\key{remove bonds}{unbond atom1,atom2}
+\key{join to molecules together}{fuse [atom1, atom2]}
+}
+
+\vskip 10pt
+
+\vbox{\head{Old School Images}
+Load a .pdb and make a cartoon view. Then change the background colour to white and change the ray mode to 2.\par
+\key{}{set ray\_trace\_mode,2}
+\key{make the lines thinner}{set antialias,2}
+\key{raytrace the image}{ray}
+}
+
+
+\end{multicols}
+
+\vspace{\fill}
+\copyright 2007-2009 R. Bryn\ Fenwick -- licensed under the terms of the GNU
+General Public License 2.0 or later.
+\end{document}
