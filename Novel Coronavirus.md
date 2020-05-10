@@ -23,12 +23,17 @@
 * Bone pain, dryness feeling.
 
 
-## Objectives for the pandemic
+## Current objectives for the pandemic
 
 
-* The chief objective of global health efforts against COVID-19 remains to effectively quarantine patients and screen individuals who may be infected to limit spread.
+* Objectives of global health efforts against COVID-19 remains to effectively distance infected patients among them and from less mild cases; and screen individuals who may be infected to limit rapid spread.
+* ...
 
 
+## Developing objectives for the pandemic
+
+* Deliver consistent models of infection and disease growth in a timeline infographics
+* ...
 
 ## COVID-19 main proteinase (Mpro)
 
